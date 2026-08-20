@@ -4,6 +4,20 @@
 
 SecureBank Embedded Terminal is an embedded banking simulation system developed using the AT89C52 (8051) microcontroller. The project demonstrates secure user authentication through an infrared sensor and keypad-based PIN verification while providing basic banking operations on a 16×2 LCD.
 
+## Project Photos
+
+### Front View
+
+![SecureBank Embedded Terminal](Front_View.jpeg)
+
+### Internal Hardware
+
+![Internal Hardware](Internal_Hardware.jpeg)
+
+### Circuit Diagram
+
+![Circuit Diagram](Circuit_diagram.jpeg)
+
 ---
 
 ## Features
@@ -23,53 +37,61 @@ SecureBank Embedded Terminal is an embedded banking simulation system developed 
 
 - AT89C52 (8051) Microcontroller
 - 16×2 LCD Display
-- 4×4 Matrix Keypad
-- Infrared Sensor
-- Crystal Oscillator
+- 4×4 Keypad
+- IR Sensor
 - LEDs
-- Breadboard
+- Buzzer
 - Power Supply
+- Connecting Wires and Supporting Components
 
 ---
 
 ## Software Used
 
-- Keil uVision
-- Embedded Assembly Language
+- Assembly Language
+- Keil µVision
+- Proteus / Embedded Hardware Testing
+
+---
+
+## System Working
+
+1. The IR sensor detects the presence of a user.
+2. The system prompts the user to enter a PIN through the keypad.
+3. The entered PIN is verified by the 8051 microcontroller.
+4. After successful authentication, the user can access banking operations.
+5. The available operations include balance inquiry, cash deposit, and cash withdrawal.
+6. The LCD provides instructions and system status to the user.
+7. LEDs provide additional system status indication.
 
 ---
 
 ## Project Files
 
-- `SecureBank.asm` – Source Code
-- `bank.hex` – Compiled HEX File
-- `bank.uvproj` – Keil Project
-- `Circuit_diagram.jpeg` – Circuit Diagram
-- `Front_View.jpeg` – Project Prototype
+| File | Description |
+|---|---|
+| `SecureBank.asm` | Main 8051 Assembly source code |
+| `bank.hex` | Compiled HEX file |
+| `bank.uvproj` | Keil project file |
+| `Circuit_diagram.jpeg` | Circuit diagram |
+| `Front_View.jpeg` | Front view of the completed system |
+| `Internal_Hardware.jpeg` | Internal hardware implementation |
 
 ---
 
-## Working
+## Key Learning Outcomes
 
-1. Detects user presence using the IR sensor.
-2. Prompts the user to enter a PIN.
-3. Verifies the entered PIN.
-4. Displays banking options on the LCD.
-5. Executes the selected banking operation.
-
----
-
-## Future Improvements
-
-- EEPROM-based account storage
-- RFID/Smart Card authentication
-- Fingerprint authentication
-- Password encryption
-- Transaction history
+- 8051 microcontroller programming
+- Assembly language programming
+- GPIO interfacing
+- LCD interfacing
+- Keypad interfacing
+- IR sensor integration
+- User authentication logic
+- Embedded system design and debugging
 
 ---
 
-## Author
+## Project Status
 
-**Piyush Prasad**
-B.Tech Electronics & Communication Engineering
+Completed as an embedded systems project demonstrating a secure banking terminal using the 8051 microcontroller.
